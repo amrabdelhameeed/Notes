@@ -110,6 +110,7 @@ class NoteCubit extends Cubit<NoteState> {
   }
 
   bool? isDark;
+
   savetoSp() async {
     await callGetInstanceSharedPref();
     _prefs.setStringList(textkey, titles);

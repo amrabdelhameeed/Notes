@@ -66,11 +66,11 @@ class GridviewWidget extends StatelessWidget {
           },
           staggeredTileBuilder: (int index) => new StaggeredTile.count(
               2,
-              bloc.notes[index].name.length > 35
+              bloc.notes[index].name.length > 40
                   ? 3
-                  : (bloc.notes[index].name.length > 25 ? 2 : 1)),
-          mainAxisSpacing: 4.0,
-          crossAxisSpacing: 4.0,
+                  : (bloc.notes[index].name.length > 30 ? 2 : 1)),
+          mainAxisSpacing: 1.0,
+          crossAxisSpacing: 1.0,
         );
       },
     );

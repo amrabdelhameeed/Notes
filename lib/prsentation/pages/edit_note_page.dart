@@ -31,6 +31,7 @@ class EditNotePage extends StatelessWidget {
           },
           text: title.length > 1 ? title.substring(title.length - 2) : title,
           child: TextFormField(
+            textAlign: isRTL ? TextAlign.right : TextAlign.left,
             decoration: InputDecoration(
               border: InputBorder.none,
             ),

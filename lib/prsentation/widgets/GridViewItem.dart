@@ -26,7 +26,7 @@ class GridViewItem extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(12))),
             child: Text(
               note.name,
-              maxLines: 7,
+              maxLines: 8,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
